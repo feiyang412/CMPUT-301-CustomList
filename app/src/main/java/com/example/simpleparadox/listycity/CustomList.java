@@ -64,5 +64,15 @@ public class CustomList extends ArrayAdapter<City> {
         cities.add(city);
         return;
     }
-
+    /**
+     * This returns whether or not the city belongs in the list
+     * @param city
+     * This is the city we need to check
+     * @return
+     * Return whether or not the city belongs in the list
+     */
+    public boolean hasCity(City city){
+        //return cities.contains(city);
+        return false;
+    }
 }
