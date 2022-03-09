@@ -35,4 +35,19 @@ public class CustomListTest {
         list.addCity(city);
         assertTrue(list.hasCity(city));
     }
+    /*
+delete(City city)
+- Check if a city is present in the list. If it does then remove it from the list, if not then throw an exception
+- Test to see if your method actually removes it from the list
+- Test to see if the exception is actually thrown
+*/
+    @Test
+    public void testDelete(){
+        City city = new City("Regina", "Saskatchewan");
+        list.addCity(city);
+        assertTrue(list.hasCity(city));
+        list.delete(city);
+        assertFalse(list.hasCity(city));
+    }
+
 }
