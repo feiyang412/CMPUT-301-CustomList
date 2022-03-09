@@ -80,7 +80,11 @@ public class CustomList extends ArrayAdapter<City> {
      * @param city
      * This is a city to delete
      */
-    public void delete(City city){
-        return;
+    public void deleteCity(City city){
+        if (cities.contains(city)){
+            cities.remove(city);
+        } else {
+            new Exception("The city we want to remove is not in the list.");
+        }
     }
 }

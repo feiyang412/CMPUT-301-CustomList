@@ -46,7 +46,7 @@ delete(City city)
         City city = new City("Regina", "Saskatchewan");
         list.addCity(city);
         assertTrue(list.hasCity(city));
-        list.delete(city);
+        list.deleteCity(city);
         assertFalse(list.hasCity(city));
     }
 
