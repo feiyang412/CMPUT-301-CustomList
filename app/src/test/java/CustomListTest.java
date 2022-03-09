@@ -50,4 +50,17 @@ delete(City city)
         assertFalse(list.hasCity(city));
     }
 
+    /*
+countCities()
+- Return how many cities are in the list
+- Test to see whether your method is correct
+ */
+    @Test
+    public void testCountCities(){
+        City city = new City("Regina", "Saskatchewan");
+        list.addCity(city);
+        assertTrue(list.hasCity(city));
+        assertEquals(1,list.countCities());
+    }
+
 }

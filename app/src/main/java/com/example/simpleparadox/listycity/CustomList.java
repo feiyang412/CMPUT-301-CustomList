@@ -87,4 +87,13 @@ public class CustomList extends ArrayAdapter<City> {
             new Exception("The city we want to remove is not in the list.");
         }
     }
+
+    /**
+     * This counts how many cities are in the list
+     * @return
+     * Return the size of city list
+     */
+    public int countCities(){
+        return -1;
+    }
 }
